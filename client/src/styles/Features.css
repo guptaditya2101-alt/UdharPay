@@ -1,0 +1,97 @@
+.features-section {
+  padding: 90px 10%;
+  background: #ffffff;
+}
+
+.features-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #e8f7ef;
+  color: #0f9d58;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.features-header h2 {
+  margin: 20px 0 15px;
+  font-size: 38px;
+  color: #1f2937;
+}
+
+.features-header p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.features-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  padding: 35px 28px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(15, 157, 88, 0.12);
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: #e8f7ef;
+  font-size: 32px;
+}
+
+.feature-card h3 {
+  margin: 0 0 12px;
+  font-size: 21px;
+  color: #1f2937;
+}
+
+.feature-card p {
+  margin: 0;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
+  .features-header h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 60px 20px;
+  }
+}

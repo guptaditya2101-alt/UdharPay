@@ -1,0 +1,61 @@
+.payment-page {
+  width: 100%;
+}
+
+.payment-customer-info {
+  max-width: 850px;
+  margin-bottom: 25px;
+  padding: 22px 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.payment-customer-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.payment-customer-info span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.payment-customer-info strong {
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.payment-customer-info div:last-child strong {
+  color: #ef4444;
+}
+
+.payment-form-card {
+  max-width: 850px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+.loader-container {
+  padding: 60px 20px;
+  text-align: center;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .payment-customer-info {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .payment-form-card {
+    padding: 20px;
+  }
+}
