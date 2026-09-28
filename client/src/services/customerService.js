@@ -1,6 +1,6 @@
 import { getAuthHeaders } from "./authService";
 
-const API_URL = "http://192.168.1.38:5000/api/customers";
+const API_URL = "https://udharpay-server.onrender.com/api";
 
 // =========================
 // GET ALL CUSTOMERS

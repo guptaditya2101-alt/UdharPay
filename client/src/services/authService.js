@@ -1,6 +1,6 @@
 const CURRENT_USER_KEY = "udharpay_current_user";
 const TOKEN_KEY = "udharpay_token";
-const API_URL = "http://192.168.1.38:5000/api"; 
+const API_URL = "https://udharpay-server.onrender.com/api"; 
 
 export const registerUser = async (userData) => {
   try {
