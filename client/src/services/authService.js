@@ -1,7 +1,7 @@
 const CURRENT_USER_KEY = "udharpay_current_user";
 const TOKEN_KEY = "udharpay_token";
-const API_URL = "https://udharpay-server.onrender.com/api"; 
-
+const API_URL =
+  import.meta.env.VITE_API_URL || "https://udharpay-server.onrender.com/api";
 export const registerUser = async (userData) => {
   try {
     const response = await fetch(`${API_URL}/register`, {
