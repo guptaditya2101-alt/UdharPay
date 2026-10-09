@@ -1,33 +1,37 @@
 .hero {
-  min-height: 650px;
-  padding: 80px 10%;
+  min-height: 600px;
+  padding: 80px 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #f7faf9;
+  background: linear-gradient(180deg, #f0fbf5 0%, #ffffff 100%);
 }
 
 .hero-content {
+  width: 100%;
   max-width: 850px;
 }
 
 .hero-badge {
   display: inline-block;
   padding: 10px 18px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  border: 1px solid #c8efd8;
   border-radius: 25px;
   background: #e8f7ef;
-  color: #0f9d58;
-  font-weight: 600;
+  color: #087a43;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: 52px;
-  line-height: 1.2;
   color: #1f2937;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.2;
+  font-weight: 800;
 }
 
 .hero h1 span {
@@ -35,68 +39,89 @@
   color: #0f9d58;
 }
 
-.hero p {
+.hero-content > p {
   max-width: 700px;
-  margin: 25px auto;
-  font-size: 19px;
-  line-height: 1.7;
-  color: #6b7280;
+  margin: 24px auto;
+  color: #596579;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 .hero-actions {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 14px;
   margin-top: 30px;
 }
 
 .hero-primary-btn,
-.hero-secondary-btn {
-  padding: 14px 30px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
+.hero-secondary-btn,
+.hero-login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 13px 25px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
   text-decoration: none;
-  transition: 0.3s;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .hero-primary-btn {
   background: #0f9d58;
-  color: white;
+  color: #ffffff;
+  box-shadow: 0 5px 14px rgba(15, 157, 88, 0.2);
 }
 
 .hero-primary-btn:hover {
   background: #087a43;
+  transform: translateY(-2px);
 }
 
-.hero-secondary-btn {
-  background: white;
-  color: #0f9d58;
-  border: 1px solid #0f9d58;
+.hero-secondary-btn,
+.hero-login-btn {
+  background: #ffffff;
+  color: #087a43;
+  border-color: #b9e5ca;
 }
 
-.hero-secondary-btn:hover {
+.hero-secondary-btn:hover,
+.hero-login-btn:hover {
   background: #e8f7ef;
 }
 
+.hero-free-note {
+  margin-top: 18px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
 .hero-stats {
-  width: 100%;
-  max-width: 900px;
-  margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  max-width: 950px;
+  margin-top: 58px;
 }
 
 .hero-stat-card {
-  padding: 22px;
   display: flex;
   align-items: center;
   gap: 15px;
+  padding: 22px;
   text-align: left;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid #e5eee8;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(15, 50, 30, 0.06);
 }
 
 .hero-stat-card > span {
@@ -105,35 +130,54 @@
 
 .hero-stat-card strong {
   display: block;
-  font-size: 17px;
   color: #1f2937;
+  font-size: 16px;
 }
 
 .hero-stat-card p {
-  margin: 5px 0 0;
-  font-size: 14px;
+  margin: 6px 0 0;
   color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 20px;
+    min-height: auto;
+    padding: 55px 20px 45px;
   }
 
   .hero h1 {
-    font-size: 38px;
+    font-size: 37px;
+  }
+
+  .hero-content > p {
+    font-size: 16px;
   }
 
   .hero-actions {
     flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .hero-primary-btn,
-  .hero-secondary-btn {
+  .hero-secondary-btn,
+  .hero-login-btn {
     width: 100%;
+    box-sizing: border-box;
   }
 
   .hero-stats {
     grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 38px;
+  }
+
+  .hero-stat-card {
+    padding: 18px;
   }
 }

@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import InstallApp from "./pages/InstallApp";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -37,6 +38,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/install" element={<InstallApp />} />
 
       <Route element={<AuthLayout />}>
         <Route path="/login" element={<Login />} />
