@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://udhar-pay.vercel.app/sitemap.xml
