@@ -55,7 +55,7 @@ function CustomerDetails() {
 
       try {
         const profileResponse = await fetch(
-          "http://192.168.1.38:5000/api/profile",
+          "https://udharpay-server.onrender.com/api/profile",
           {
             headers: getAuthHeaders(),
           }
