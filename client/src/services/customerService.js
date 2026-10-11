@@ -1,7 +1,6 @@
 import { getAuthHeaders } from "./authService";
 
-const API_URL =
-  import.meta.env.VITE_API_URL || "https://udharpay-server.onrender.com/api";
+const API_URL = "https://udharpay-server.onrender.com/api/customers";
 
 // =========================
 // GET ALL CUSTOMERS
