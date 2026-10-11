@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getAuthHeaders } from "../services/authService";
 import { t } from "../utils/translations";
 
-const API_URL = "http://192.168.1.38:5000/api";
+const API_URL = "https://udharpay-server.onrender.com/api";
 
 const getMessage = (english, hindi) => {
   const language =
